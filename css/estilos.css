@@ -1,0 +1,427 @@
+/* CSS Document */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ------------------------------------------------------------
+	Estilos generales
+	------------------------------------------------------------- */
+	body{
+		
+		color: #4d4d4d;
+		font-family:'Trebuchet MS';
+		line-height: 1.3;
+		background: #ECEDE7;
+	}
+
+	@font-face {
+		font-family: 'Pacificod';
+		src: url('fonts/pacifico-webfont.eot');
+		src: url('fonts/pacifico-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/pacifico-webfont.woff') format('woff'),
+		url('fonts/pacifico-webfont.ttf') format('truetype'),
+		url('fonts/pacifico-webfont.svg#PacificoRegular') format('svg');
+		font-weight: normal;
+		font-style: normal;
+
+	}
+	a {
+		border: 0;
+		color: #00829A;
+	}
+	a:hover{
+		text-decoration: underline;
+	}
+	h1, h2, h3{
+		font-weight: normal;
+		line-height: 1.5;
+	}
+
+	h1{
+		color: #E33E4F;
+		font-family: 'Pacificod';
+		display: block;
+		font-size: 65px;
+		padding: 15px 0; 
+	}
+	h4{
+		font-family: 'Pacificod';
+		font-size: 24px;
+	}
+	img {
+		vertical-align: middle;
+	}
+	a img{
+		border: none;
+	}
+
+/* a img{
+	opacity:1.0;
+	filter:alpha(opacity=100);
+}
+a:hover img{
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	} */
+	p{
+		line-height: 150%;
+		color: #555;
+		text-align: justify;
+	}
+
+	input, textarea, select{
+		border: 2px solid #666;
+		background: #eee;
+		color: #555;
+		font-size: 100%;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 4px 3px;
+	}
+	label{
+		font-size: 90%;
+		margin-bottom: 2px;
+	}
+	label small{
+		font-size: 80%;
+		margin-bottom: 2px;
+	}
+	.wrapper{
+		width: 930px;
+		margin: 0 auto;
+	}
+	/*HEADER*/
+	header{
+		background: url('imagenes/nav_back.png') repeat-x bottom center;
+		height: 70px;
+		position: fixed;
+		width:100% ;
+		z-index: 5;
+		-webkit-animation: nav 0.5s 1;
+		-webkit-animation-fill-mode: both;
+		-webkit-animation-delay: 0.3s;
+	}
+	nav{
+		display: block;
+		margin: 0 auto;
+		padding: 15px 0;
+		text-align: center;
+		width: 700px;
+	}
+	nav a{
+		font-family: 'Pacificod';
+		color: #ECEDE7;
+		font-size: 24px;
+		margin: 10px 25px;
+		text-decoration: none;
+	}
+	nav a:hover{
+		color: #00829A;
+		text-decoration: none;
+	}
+	/*ABOUT ME*/
+	#aboutMe{
+		padding: 60px 0 0;
+		width: 100%;
+	}
+	#aboutMe .wrapper{
+		background:url('imagenes/hgroup_back.png') no-repeat fixed  center 55px;
+		height: 600px;
+		-webkit-animation: feet 1s 1;
+		-webkit-animation-fill-mode: both;
+		-webkit-animation-delay: 0.8s;
+	}
+	
+	hgroup{
+		padding: 0 165px;
+		-webkit-animation: aboutme 0.5s 1;
+		-webkit-animation-fill-mode: both;
+		-webkit-animation-delay: 1s;
+	}
+	hgroup h1:first-child{
+		margin: 0;
+	}
+	hgroup h1:nth-child(2){
+		color: #4D4D4D;
+		text-transform: lowercase;
+	}
+	hgroup h1:nth-child(2) strong{
+		color: #00A1BE;
+	}
+	#aboutMe h2, #aboutMe h3{
+		font-family: 'Trebuchet MS';
+		color: #4d4d4d;
+		font-weight: bold;
+		font-size: 21px;
+	}
+	#aboutMe h3 strong{
+		font-family: 'Pacificod';
+		font-size: 30px;
+		color: #4d4d4d;
+		display: table;
+		margin: 15px 0;
+		font-weight: normal;
+	}
+	#aboutMe a{
+		background: none repeat scroll 0 0 #E33E4F;
+		color: #ECEDE7;
+		float: right;
+		font-family: 'Pacificod';
+		font-size: 18px;
+		font-weight: normal;
+		margin: 10px;
+		padding: 5px;
+		text-align: center;
+		text-decoration: none;
+		width: 150px;
+		border-radius: 15px;
+		-webkit-animation: aboutme 0.5s 1;
+		-webkit-animation-fill-mode: both;
+		-webkit-animation-delay: 1s;
+	}
+	/*BOOK*/
+	#book{
+		background: url("imagenes/section_back.png") repeat-x scroll center -61px #EDE8DF;;
+		display: block;
+		height: auto;
+		padding: 45px 0;
+		width: 100%;
+		margin-top: -6px;
+	}
+	#book .wrapper{
+		background:url('imagenes/book_back.png') no-repeat center 0;
+		padding: 15px 0 0;
+	}
+
+	#book h3{
+		color: #ECEDE7;
+		font-family: 'Pacificod';
+		font-size: 32px;
+		margin: 50px auto;
+		width: 145px;
+	}
+
+	#book ul{
+		margin-bottom: 15px;
+		overflow: hidden;
+	}
+	#book ul li{
+		display: block;
+		float: left;
+		width: 260px;
+		margin: 20px 22px;
+	}
+	#book ul li a{
+		display: block;
+		overflow: hidden;
+		border-radius: 50%;
+		border: 3px dashed #E73137;
+	}
+	#book h4{
+		text-align: center;
+	}
+	.marcas{
+		display: inline-block;
+		margin-top: 20px;
+	}
+	.marcas dt{
+		float: left;
+		margin: 15px;
+		width: 120px;
+	}
+	/*FOOTER*/
+	footer{
+		margin: 20px auto 0;
+		width: 100%;
+		height: 320px;
+		display: block;
+		/*overflow: hidden;*/
+		background: url('imagenes/back.jpg') repeat left top; 
+	}
+	footer form{
+		border-right: 2px dashed #00829A;
+		float: left;
+		padding: 0 20px 10px 100px;
+		width: 375px;
+	}
+	footer form label{
+		display: inline-block;
+		width: 60px;
+	}
+	footer form input[type="text"], footer form textarea{
+		background: none repeat scroll 0 0 #ECEDE7;
+		border: 2px dashed #00829A;
+		margin: 5px;
+		width: 270px;
+		resize: none;
+	}
+	footer form input[type="submit"]{
+		background: none repeat scroll 0 0 #00829A;
+		border: medium none;
+		border-radius: 16px 16px 16px 16px;
+		color: #CFE8E5;
+		float: right;
+		font-family: 'Pacificod';
+		font-size: 18px;
+		margin-right: 26px;
+		margin-top: -20px;
+		width: 65px;
+	}
+	footer h3{
+		background: url('imagenes/contact_ribbon.png') transparent no-repeat left top;
+		float: left;
+		height: 75px;
+		margin-top: -12px;
+		padding: 35px 0 0 90px;
+		color: #00829A;
+		font-size: 34px;
+		font-family: 'Pacificod';
+		width: 100%;
+	}
+
+	footer ul{
+		margin: 0 auto;
+	}
+	footer ul li{
+		float: left;
+		margin: 10px;
+		width: 45px;
+	}
+	footer ul li a{
+		background: url("imagenes/social.png") no-repeat scroll -16px -11px transparent;
+		float: left;
+		height: 47px;
+		width: 47px;
+		text-indent: -90000px;
+	}
+	footer ul li:nth-child(1) a:hover{
+		background-position:-16px -71px
+	}
+	footer ul li:nth-child(2) a{
+		background-position:-275px -11px
+	}
+	footer ul li:nth-child(2) a:hover{
+		background-position:-275px -71px
+	}
+	footer ul li:nth-child(3) a{
+		background-position:-361px -11px
+	}
+	footer ul li:nth-child(3) a:hover{
+		background-position:-361px -71px
+	}
+	footer ul li:nth-child(4) a{
+		background-position:-448px -11px
+	}
+	footer ul li:nth-child(4) a:hover{
+		background-position:-448px -71px
+	}
+	footer ul li:nth-child(5) a{
+		background-position:-102px -11px
+	}
+	footer ul li:nth-child(5) a:hover{
+		background-position:-102px -71px
+	}
+	footer ul li:nth-child(6) a{
+		background-position:-535px -11px
+	}
+	footer ul li:nth-child(6) a:hover{
+		background-position:-535px -71px
+	}
+	#social{
+		width: 390px;
+		float: right;
+		padding:0 20px 20px; 
+
+	}
+	footer div a{
+		margin: 10px;
+	}
+
+	/*INLINE*/
+
+	.fancy{
+		padding: 10px;
+		width: 700px;
+
+	}
+
+	.fancy div h1{
+		color: #4d4d4d;
+		font-size: 34px;
+	}
+	.gallery{
+		float: left;
+		margin: 0 20px 10px 0;
+		overflow: hidden;
+		width: 520px;
+	}
+	.fancy div p{
+		font-size: 14px;
+	}
+
+	/* Cupcakeishon was here */
+
+	@-webkit-keyframes feet{
+		from{
+			background-position: center -180px;
+		}
+		to{
+			background-position: center 55px;
+		}
+	}
+
+	@-webkit-keyframes nav{
+		from{
+			margin-top: -70px;
+		}
+		to{
+			margin-top: 0;
+		}
+	}
+
+	@-webkit-keyframes aboutme{
+		from{
+			opacity: 0;
+		}
+		to{
+			opacity: 1;
+		}
+	}
